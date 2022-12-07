@@ -11,7 +11,7 @@ local keyCheck
 for i,v in pairs(keys) do
     if counter == #keys then
     --not whitelisted!
-    keys = ""
+    keys = "Key1","Key2","Key3"
     game.Players.LocalPlayer:Kick("Not a valid key!")
     else
         if v == _G.Key then
