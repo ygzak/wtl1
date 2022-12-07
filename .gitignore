@@ -11,7 +11,7 @@ local keyCheck
 for i,v in pairs(keys) do
     if counter == #keys then
     --not whitelisted!
-    keys = "Key1","Key2","Key3"
+    keys = ""
     game.Players.LocalPlayer:Kick("Not a valid key!")
     else
         if v == _G.Key then
@@ -19,7 +19,6 @@ for i,v in pairs(keys) do
             print("Successfully whitelisted!")
             keyCheck = _G.Key
             keys = ""
-            loadstring(game:HttpGet('https://raw.githubusercontent.com/ygzak/wltv1/main/.gitignore'))()
         else
             counter = counter +1
         end
@@ -28,6 +27,7 @@ end
 
 while true do
     if _G.Key == keyCheck then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ygzak/wltv1/main/.gitignore'))()
         --Not spoofed
     else
         game.Players.LocalPlayer:Kick("Do not try and spoof your key!")
