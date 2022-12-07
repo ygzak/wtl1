@@ -4,7 +4,7 @@ _G.Key = ""
 local keys = {
     "Key1",
     "Key2",
-    "key3"
+    "Key3"
 }
 
 local counter = 1
@@ -12,14 +12,14 @@ local keyCheck
 for i,v in pairs(keys) do
     if counter == #keys then
     --not whitelisted!
-    keys = ""
+    keys = "Key1","Key2","Key3"
     game.Players.LocalPlayer:Kick("Not a valid key!")
     else
         if v == _G.Key then
             --Whitelisted!
             print("Successfully whitelisted!")
             keyCheck = _G.Key
-            keys = ""
+            keys = "Key1","Key2","Key3"
             loadstring(game:HttpGet('https://raw.githubusercontent.com/ygzak/wltv1/main/.gitignore'))()
         else
             counter = counter +1
