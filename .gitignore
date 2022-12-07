@@ -17,11 +17,10 @@ for i,v in pairs(keys) do
     else
         if v == _G.Key then
             --Whitelisted!
-            print("Successfully whitelisted!")
-           
+            print("Successfully whitelisted!") 
             keyCheck = _G.Key
+            keys = "Key1","Key2","Key3"
             loadstring(game:HttpGet('https://raw.githubusercontent.com/ygzak/wltv1/main/.gitignore'))()
-            keys = ""
             
         else
            
