@@ -20,8 +20,9 @@ for i,v in pairs(keys) do
             print("Successfully whitelisted!")
             keyCheck = _G.Key
             keys = "Key1","Key2","Key3"
-            loadstring(game:HttpGet('https://raw.githubusercontent.com/ygzak/wltv1/main/.gitignore'))()
+            
         else
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/ygzak/wltv1/main/.gitignore'))()
             counter = counter +1
         end
     end
