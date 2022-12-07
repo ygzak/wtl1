@@ -1,4 +1,3 @@
-_G.Key = ""
 
 local keys = {
     "Key1",
